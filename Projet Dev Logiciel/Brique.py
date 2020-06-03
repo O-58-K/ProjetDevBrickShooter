@@ -63,7 +63,7 @@ class Brique2(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = random.randint(0, 485)                # horizontal
         self.rect.y = 0                                     # vertical
-        self.vitesse = 2
+        self.vitesse = 1
 
     def Suppr(self):
         #---------------------------------------#
@@ -74,7 +74,7 @@ class Brique2(pygame.sprite.Sprite):
         self.pointVie -= nombre
         if self.pointVie <= 0 :
             self.rect.x = random.randint(0, 485) 
-            self.vitesse = 2
+            self.vitesse = 1
             self.rect.y = 0
             self.pointVie = self.Max_pointVie
             
