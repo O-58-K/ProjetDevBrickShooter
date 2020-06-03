@@ -5,7 +5,7 @@ import pygame
 class Tir(pygame.sprite.Sprite):                
     def __init__(self, joueur):
         super().__init__()
-        self.vitesse = 10
+        self.vitesse = 30
         self.image = pygame.image.load("image/tir.png")
         self.joueur = joueur
         self.rect = self.image.get_rect()
